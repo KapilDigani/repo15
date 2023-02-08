@@ -1,0 +1,30 @@
+pipeline:
+  name: Demo for Acrons
+  identifier: Demo_for_Acrons
+  projectIdentifier: KD_Git_Ex
+  orgIdentifier: KD
+  tags: {}
+  stages:
+    - stage:
+        name: Custom
+        identifier: Custom
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: echo
+                  identifier: echo
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo "Hello from main branch"
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
