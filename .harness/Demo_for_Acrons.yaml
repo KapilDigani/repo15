@@ -23,7 +23,7 @@ pipeline:
                     source:
                       type: Inline
                       spec:
-                        script: echo "Hello from main branch"
+                        script: echo "Hello from feature-3 branch"
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
